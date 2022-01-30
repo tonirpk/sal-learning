@@ -1,0 +1,22 @@
+.bluecolor {
+    font-style: italic;
+    color: blue;
+}
+
+.redcolor {
+    font-weight: bold;
+    color: red;
+}
+
+h2,
+h4 {
+    text-align: justify;
+    color: blue;
+}
+
+p {
+    font-family: sans-serif;
+    text-indent: 30px;
+    text-align: justify;
+    width: 400px;
+}

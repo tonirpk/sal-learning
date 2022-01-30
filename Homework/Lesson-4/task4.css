@@ -1,0 +1,9 @@
+td {
+    font-weight: bold;
+}
+
+.nobold h1,
+.nobold h2,
+.nobold th {
+    font-weight: normal;
+}
