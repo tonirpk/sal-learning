@@ -25,6 +25,7 @@
 }
 
 .box {
+    flex-grow: 1;
     border: black solid 1px;
     margin: 0px 0px 20px 15px;
     padding: 50px;
