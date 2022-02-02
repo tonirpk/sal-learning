@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    border: solid black 1px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bored {
+    border: black solid 1px;
+    flex-basis: 100%;
+    height: 150px;
+    margin: 0px 0px 15px 0px;
+}
+
+.footer {
+    border: black solid 1px;
+    flex-basis: 100%;
+    height: 150px;
+    margin: 15px 0px 0px 0px;
+}
+
+.boxcontainer {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.box {
+    border: black solid 1px;
+    margin: 0px 0px 20px 15px;
+    padding: 50px;
+}
+
+.right {
+    border: black solid 1px;
+    flex-grow: 1;
+}
+
+.content {
+    margin: 0px 15px 0px 15px;
+    border: black solid 1px;
+    flex-grow: 7;
+    height: 600px;
+}

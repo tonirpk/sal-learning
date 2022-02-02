@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-2 {
+    border: solid rgb(0, 0, 0) 1px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.container {
+    display: flex;
+}
+
+.c1,
+.c3 {
+    margin: 20px;
+}
+
+.c2 {
+    margin: 0px 20px;
+}
+
+.container>div {
+    border: black solid 1px;
+    height: 80px;
+    width: 80px;
+    box-sizing: border-box;
+}
+
+.container .c {
+    flex-grow: 1;
+    margin: 0px 15px;
+}
+
+.container .cm {
+    height: 600px;
+}
