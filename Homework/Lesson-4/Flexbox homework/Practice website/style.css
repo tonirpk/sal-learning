@@ -1,0 +1,179 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: 'Raleway';
+        }
+        
+        .containerheader {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 25px;
+        }
+        
+        .containerheader h2 {
+            font-weight: 500;
+            color: #59abe3;
+            letter-spacing: 1px;
+            font-size: 30px;
+            flex-grow: 1;
+        }
+        
+        .navheaderlist a {
+            color: #aaa;
+            text-decoration: none;
+        }
+        
+        .navheaderlist li {
+            padding-right: 15px;
+            text-decoration: none;
+            display: inline-block;
+            list-style-type: none;
+            margin-top: 10px;
+        }
+        
+        .navheaderlist li a:hover {
+            background-color: #fa5ba5;
+            padding: 10px;
+            border-radius: 55px;
+            color: white;
+        }
+        
+        .containerbackground {
+            height: 420px;
+            background-size: cover;
+            background-image: url(imgs/jumbotron.jpg);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .containerbackground h2 {
+            color: #fff;
+            font-size: 45px;
+            text-align: center;
+            flex-basis: 100%;
+            margin-bottom: 40px;
+        }
+        
+        .containerbackground a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 35px;
+            background-color: #fa5ba5;
+            padding: 25px;
+            margin-top: 25px;
+        }
+        
+        .servicescontainer {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        
+        .servicescontainer h2 {
+            text-align: center;
+            flex-basis: 100%;
+            margin: 50px;
+        }
+        
+        .servicescontainer .icon {
+            font-size: 50px;
+            color: #999;
+            text-align: center;
+        }
+        
+        .icon p {
+            word-spacing: 4px;
+            margin: 20px 30px 30px 30px;
+            text-align: center;
+            width: 300px;
+            font-size: 14px;
+            color: #999
+        }
+        
+        .blogcontainer {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #fcfcfc;
+            padding: 45px;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .blogcontainer .blogname {
+            flex-basis: 100%;
+            text-align: center;
+            margin: 40px;
+        }
+        
+        .blogcontainer .blog .date {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .blogcontainer .blog h2 {
+            color: black;
+        }
+        
+        .blogcontainer .blog {
+            display: inline-block;
+            padding-top: 30px;
+            color: #999;
+            flex-basis: 55%;
+        }
+        
+        .blogcontainer .blog img {
+            float: left;
+            margin-right: 28px;
+        }
+        
+        .footercontainer {
+            display: flex;
+            flex-flow: column wrap;
+            background-color: #38404b;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .footercontainer h2 {
+            font-weight: 500;
+            color: #bcc9dd;
+            font-size: 30px;
+            text-align: center;
+            margin: 30px 0px 0px 0px;
+        }
+        
+        .navfooterlist a {
+            color: #bcc9dd;
+            text-decoration: none;
+        }
+        
+        .navfooterlist li {
+            padding-right: 15px;
+            text-decoration: none;
+            display: inline-block;
+            list-style-type: none;
+            margin-top: 10px;
+            margin: 15px 0px 30px 0px;
+        }
+        
+        .navfooterlist li a:hover {
+            background-color: #fa5ba5;
+            padding: 10px;
+            border-radius: 55px;
+            color: white;
+        }
+        
+        .footercontainer p {
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
