@@ -1,111 +1,283 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
+body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-.header{
+.headercontainer {
+    height: 150px;
     background-color: #87509c;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
-    padding: 0px 32px;
-    height: 80px;
-    align-items: center;
+    align-content: center;
 }
 
-.nav ul{
-display: flex;
-list-style: none;
-margin: 0;
-padding: 0;
+.headernavlist ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.nav li{
-    margin: 0 4px;
+.headernavlist a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 17px;
+    border-radius: 6px;
+    transition: 0.3s background-color;
 }
 
-.nav a{
-font-size: 16px;
-line-height: 18px;
-font-weight: 400;
-text-transform: uppercase;
-color: #ffffff;
-text-decoration: none;
-padding: 10px 17px;
-border-radius: 6px;
-transition:  0.3s background-color;
-}
-
-.nav a:hover{
+.headercontainer a:hover {
     background-color: #643a79;
 }
 
-.section1{
+.section1 {
+    background-color: #87509c;
     display: flex;
     flex-flow: column wrap;
-    background-color: #87509c;
-    padding-left: 270px;
-    padding-right: 270px;
-    justify-content: center
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.section1 h1{
+.section1 h1 {
     font-size: 42.2px;
     line-height: 48px;
     font-weight: 700;
     color: #f7f3ea;
-    text-align: center;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
-.section1 a{
-    border-radius: 6px; 
-    background-color: #eb7d4b;
+
+.section1 a {
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
     letter-spacing: 0.02em;
     color: #ffffff;
-    text-align: center;
     text-decoration: none;
-    margin-bottom: 145px;
+    text-transform: uppercase;
+    background-color: #eb7d4b;
+    padding: 28px 81px;
+    border-radius: 4px;
+    border-bottom: #c86a40 solid 5px;
     width: 293px;
-    height: 70px;
+    margin-bottom: 90px;
 }
 
-.section2{
+.section2 {
     background-color: #17c2a4;
+    height: auto;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
 }
 
-.section2heading h2{
+.section2 .titlecontainer h1 {
     font-size: 40px;
     line-height: 29px;
     font-weight: 700;
     letter-spacing: 0.1em;
     color: #ffffff;
-    margin-top: 119px 418px;
-    text-align: center;
+    margin-top: 100px;
 }
 
-.littledash{
-    width: 87;
-    height: 4px;
-    opacity: 0.14;
-    background-color:black;
-    margin: 21px auto 18px auto;
+.shtoka {
+    background-color: black;
+    width: 80px;
+    height: 3px;
+    opacity: 0.2;
+    margin: 20px auto;
 }
 
-.section2heading p{
+.section2 .titlecontainer p {
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #ffffff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicescontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px 0px 100px 0px;
+}
+
+.icons h1 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: 30px 0 15px 0;
+}
+
+.icons p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    width: 200px;
+}
+
+.section3 {
+    background-color: #e7f1f8;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
     text-align: center;
+}
+
+.grayheaders {
+    font-size: 41.3px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #3c4761;
+    margin-top: 100px;
+}
+
+.grayheadersdiscrption {
+    font-size: 18.6px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.namesundericons {
+    margin: 30px 0 0 0;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #27283d;
+}
+
+.icons2 p {
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    margin: 15px 0 30px 0;
+}
+
+.icons2 .jobtitle {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #30bae7;
+}
+
+.graycir {
+    background-color: #878787;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.section4 {
+    background-color: #ffffff;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.icons,
+.icons2,
+.icons3 {
+    margin: 20px;
+}
+
+.soicalgraycir {
+    background-color: #878787;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.soicalmediaicon {
+    display: flex;
+    justify-content: center;
+}
+
+.section5 {
+    background-color: #ffdd99;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.section4navlist a {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #393939;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 2px 17px;
+    border-radius: 6px;
+    transition: 0.3s background-color;
+}
+
+.section4navlist a:hover {
+    background-color: #ffffff;
+}
+
+.section4navlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.computer1 {
+    background-color: #878787;
+    width: 300px;
+    height: 200px;
+}
+
+.computers p {
+    text-transform: uppercase
+}
+
+.computers {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+}
+
+.computer1 {
+    margin: 10px;
+    flex: 40%
 }
