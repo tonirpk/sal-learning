@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+    background-color: #87509c;
+}
+
+.header-contents-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 40px 0 120px 0;
+    gap: 100px;
+}
+
+.logo-header-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-nav-list ul {
+    list-style-type: none;
+}
+
+.header-nav-list li {
+    display: inline-block
+}
+
+.header-nav-list a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 17px;
+    border-radius: 6px;
+    transition: 0.3s background-color;
+}
+
+.header-nav-list a:hover {
+    background-color: #643a79;
+}
+
+.logo-discrption-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo-discrption-container h1 {
+    font-size: 42.2px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #f7f3ea;
+    text-align: center;
+}
+
+.logo-discrption-container a {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #eb7d4b;
+    padding: 20px 81px;
+    border-radius: 4px;
+    border-bottom: #c86a40 solid 5px;
+}
+
+.first-section {
+    background-color: #17c2a4;
+}
+
+.little-dash {
+    background-color: black;
+    width: 80px;
+    height: 3px;
+    opacity: 0.2;
+    margin: 20px auto;
+}
+
+.services-icons h1 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.services-icons p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.first-section {
+    background-color: #17c2a4;
+}
+
+.first-section-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.services-title-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.services-title-container h1 {
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.small-dash {
+    background-color: black;
+    width: 80px;
+    height: 3px;
+    opacity: 0.2;
+    margin: 20px auto;
+}
+
+.services-title-container p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.services-sub-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.icon-discrption {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.icon-top {
+    margin: auto;
+    display: block;
+}
+
+.icon-discrption h1 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+    margin: 70px 0 20px 0;
+}
+
+.icon-discrption p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.second-section {
+    background-color: #e7f1f8;
+}
+
+.second-section-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.team-title-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.team-title-container h1 {
+    font-size: 41.3px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #3c4761;
+    text-align: center;
+}
+
+.team-title-container p {
+    font-size: 18.6px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    text-align: center;
+}
+
+.team-sub-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.team-icon-discrption {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.team-icon-discrption h1 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.team-icon-discrption .job-title {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #30bae7;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.team-icon-discrption p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.soical-media-icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.third-section {
+    background-color: #ffffff;
+}
+
+.third-section-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.skills-title-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.skills-title-container h1 {
+    font-family: 'Titillium Web';
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #3c4761;
+    text-align: center;
+}
+
+.skills-title-container p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    text-align: center;
+}
+
+.skills-sub-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills-icon-discrption {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.skills-icon-discrption h1 {
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.forth-section {
+    background-color: #ffdd99;
+}
+
+.forth-section-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.protfolio-title-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.protfolio-title-container h1 {
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #393939;
+    text-align: center;
+}
+
+.protfolio-title-container p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #393939;
+    text-align: center;
+}
+
+.protfolio-nav-list {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.protfolio-nav-list ul {
+    list-style-type: none;
+}
+
+.protfolio-nav-list li {
+    display: inline-block;
+}
+
+.protfolio-nav-list a {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #393939;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 17px;
+    border-radius: 6px;
+    transition: 0.3s background-color;
+    display: inline-block;
+}
+
+.protfolio-nav-list a:hover {
+    background-color: #ffffff;
+}
+
+.protfolio-sub-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 60px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.computer-first-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.computer-second-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.computer-icon {
+    flex-basis: 30%;
+}
+
+.computer-icon h1 {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #393939;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forth-section-container .protfolio-button a {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #17c2a4;
+    padding: 20px 81px;
+    border-radius: 4px;
+    border-bottom: #14a58c solid 5px;
+}
+
+.fifth-section {
+    background-color: #d74680;
+}
+
+.fifth-section-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.aboutus-title-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.aboutus-title-container h1 {
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.aboutus-title-container p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.aboutus-sub-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 150px;
+}
+
+.aboutus-first-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.aboutus-second-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.aboutus_icon {
+    display: flex;
+    flex-basis: 30%;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.people-review-div {
+    flex-basis: 50%;
+}
+
+.people-review-div p {
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.people-review-div h1 {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.people-review-div .people-job-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffdd99;
+}
+
+.sixth-section {
+    background-color: #3c5499;
+}
+
+.sixth-section-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    gap: 100px;
+}
+
+.get-in-touch-title-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.top-bottom-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 45%;
+}
+
+.top-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-style {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #273a71;
+    border: 0;
+    padding: 13px;
+    margin: 10px;
+    outline: 0;
+    flex-grow: 1;
+}
+
+.bottom-button-style {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #273a71;
+    border: 0;
+    padding: 13px;
+    margin: 10px;
+    outline: 0;
+    flex-grow: 1;
+}
+
+.sixth-section-container a {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #30bae7;
+    padding: 20px 81px;
+    border-radius: 4px;
+    border-bottom: #299ec5 solid 5px;
+}
+
+.get-in-touch-title-container h1 {
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.get-in-touch-title-container p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer {
+    background-color: #344b8e;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-nav-list {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer-nav-list ul {
+    list-style-type: none;
+}
+
+.footer-nav-list li {
+    display: inline-block
+}
+
+.footer-nav-list a {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-nav-list a:hover {
+    color: #30bae7;
+}
