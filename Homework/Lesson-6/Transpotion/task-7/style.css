@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(109, 74, 42);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: rgb(253, 100, 100);
+    position: absolute;
+    right: 51%;
+    bottom: 51%;
+    z-index: 3;
+}
+
+.box2 {
+    background-color: rgb(100, 100, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.box3 {
+    background-color: rgb(100, 255, 100);
+    position: absolute;
+    left: 51%;
+    top: 51%;
+    z-index: 1;
+}

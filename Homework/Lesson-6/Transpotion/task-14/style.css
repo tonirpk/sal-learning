@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-sticky {
+    background-color: rgb(184, 221, 52);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.contaner {
+    margin: 65px 20px;
+    border: 2px solid rgb(184, 221, 52);
+}
+
+.inner-contaner {
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}

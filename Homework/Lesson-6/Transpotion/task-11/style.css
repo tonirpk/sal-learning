@@ -1,0 +1,49 @@
+.face-shape {
+    background-color: rgb(100, 200, 100);
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.eye {
+    background-color: white;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+
+.left-eye {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-25%, 0)
+}
+
+.right-eye {
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    transform: translate(25%, 0)
+}
+
+.nose {
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.mouth {
+    background-color: white;
+    width: 300px;
+    height: 25px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0)
+}

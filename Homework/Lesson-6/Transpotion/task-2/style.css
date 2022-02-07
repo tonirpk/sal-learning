@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(109, 74, 42);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    border: red 1px solid;
+    position: absolute;
+    right: 51%;
+    bottom: 51%;
+}
+
+.box2 {
+    border: blue 1px solid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.box3 {
+    border: green 1px solid;
+    position: absolute;
+    left: 51%;
+    top: 51%;
+}

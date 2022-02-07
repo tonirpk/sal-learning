@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(109, 74, 42);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-box {
+    width: 700px;
+    height: 500px;
+    background-color: rgb(100, 200, 100);
+    position: relative;
+}
+
+.small-box {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+}
+
+.box1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.box2 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}

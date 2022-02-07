@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(109, 74, 42);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-box {
+    width: 700px;
+    height: 500px;
+    border: green 1px solid;
+    position: relative;
+}
+
+.small-box {
+    width: 150px;
+    height: 150px;
+    border: red 1px solid;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}

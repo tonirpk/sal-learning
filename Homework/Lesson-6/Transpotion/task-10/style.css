@@ -1,0 +1,38 @@
+.border {
+    width: 220px;
+    height: 500px;
+    border: black 1px solid;
+    margin: 0 auto;
+    position: relative;
+}
+
+.light {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: black 1px solid;
+}
+
+.red-light {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%)
+}
+
+.yellow-light {
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.green-light {
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
