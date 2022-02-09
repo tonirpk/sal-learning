@@ -222,6 +222,7 @@
 .inner-image {
     position: relative;
     margin: 15px;
+    transition: transform 0.5s;
 }
 
 .image_overlay {
@@ -243,7 +244,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.7s;
 }
 
 .image_overlay:hover {
