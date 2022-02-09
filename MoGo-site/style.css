@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* First section */
+
+.header-background {
+    height: 100vh;
+    background-image: linear-gradient(0.0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%), url(../MoGo-site/img/egle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+
+/* Top part of the first section */
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header-top .logo span {
+    text-transform: lowercase;
+}
+
+.header-top .nav_links li,
+.header-top .nav_links a {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav_links li {
+    padding: 5px 15px;
+}
+
+.nav_links a {
+    transition: color 0.2s;
+    padding: 10px 0;
+}
+
+.nav_links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.nav_links a:hover::after {
+    transform: scale(1, 1);
+}
+
+.nav_links a:hover {
+    color: #fce38a;
+}
+
+
+/* Bottom part of the first section */
+
+.header-bottom {
+    margin-top: 100px;
+}
+
+.header-top .logo {
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header-bottom a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: #ffffff 3px solid;
+    margin: 15px 0;
+    transition: background-color 0.7s;
+}
+
+.header-bottom a:hover {
+    background-color: #ffffff3a;
+}
+
+.dash {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 3px;
+    /* opacity: 0.2; */
+    margin: 20px auto;
+}
+
+.header-bottom {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom h2 {
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 30px 0;
+}
+
+.header-bottom h1 {
+    font-family: Montserrat;
+    font-size: 800%;
+    line-height: 140px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* Second section */
+
+
+/* Top part of the section */
+
+.about_us {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us_top {
+    padding: 90px 0;
+}
+
+.about_us_top h2 {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.about_us_top h1 {
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.dash_red {
+    background-color: #f38181;
+}
+
+.about_us .about_us_top p {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Images section */
+
+.about_us_bottom .about_us_imgs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.about_us_bottom .about_us_imgs img {
+    width: 388px;
+    height: 262px;
+    object-fit: cover;
+    display: block;
+}
+
+.inner-image {
+    position: relative;
+    margin: 15px;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(0.0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image_overlay:hover {
+    opacity: 1;
+}
+
+.inner-image:hover {
+    box-shadow: 10px 10px #95e1d3;
+    transform: translate(-10px, -10px);
+}
+
+
+/* Numbers section */
+
+.ratings {
+    background-color: #95e1d3;
+    width: 100%;
+}
+
+.inner_ratings {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.square {
+    border: #ffffff 1px solid;
+    padding: 50px;
+    flex-basis: 15%;
+}
+
+.square h1 {
+    font-family: Montserrat;
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+.square p {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* Third section */
