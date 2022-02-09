@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+form {
+    width: 100%;
+}
+
+.input_feild {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input_feild label {
+    width: 150px;
+}
+
+.input-width {
+    width: 150px;
+}
