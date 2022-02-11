@@ -1,0 +1,47 @@
+$white: #ffffff;
+$dark-gray:#333333;
+$light-gray:#999999;
+$greenish:#95e1d3;
+$reddish:#f38181;
+$yellowish:#fce38a;
+$gradient-color: linear-gradient(0.0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%);
+$dash-scale: scale(5, 1);
+@mixin kaushan-title-property {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $dark-gray;
+    text-align: center;
+}
+
+@mixin montserrat-title-property {
+    font-family: Montserrat;
+    ;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $dark-gray;
+    text-align: center;
+    padding: 20px;
+}
+
+@mixin pargraph-title-property {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $light-gray;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+@mixin dash-proprety {
+    color: $reddish;
+    transform: $dash-scale;
+    padding-bottom: 30px;
+}
+
+// example
+$border: 2px red solid;

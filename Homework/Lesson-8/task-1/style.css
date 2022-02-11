@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 841px;
+  width: 80%;
+  position: relative;
+  left: 200px;
+}
+
+.container .top_part .image_container {
+  position: absolute;
+  left: 248px;
+  top: 135px;
+}
+
+.container .top_part .writing_contanier {
+  position: absolute;
+  left: 733px;
+  top: 180px;
+  width: 400px;
+}
+
+.container .top_part .writing_contanier .title {
+  opacity: 0.6;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #273d46;
+}
+
+.container .top_part .writing_contanier .descrption {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #273d46;
+}
+
+.container .bottom_part .image_container {
+  position: absolute;
+  left: 442px;
+  top: 368px;
+}
+
+.container .bottom_part .writing_contanier {
+  position: absolute;
+  left: 541px;
+  top: 434px;
+  width: 640px;
+}
+
+.container .bottom_part .writing_contanier .letter {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #273d46;
+}
+
+.container .bottom_part .writing_contanier .letter .shtoka {
+  font-size: 26px;
+  font-style: italic;
+}
+
+.container .bottom_part .writing_contanier .writter {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #273d46;
+  opacity: 0.8;
+}
+
+.container .bottom_part .writing_contanier .writter .date {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #7a7b7c;
+}
+
+.container .bottom_part .bottom_button button {
+  position: absolute;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #80b7b3;
+  -webkit-box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
+          box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
+  border-radius: 21.5px;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  left: 50%;
+  bottom: 40px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.container .bottom_part .bottom_button button i {
+  padding-left: 10px;
+  -webkit-transform: scale(2, 1.5);
+          transform: scale(2, 1.5);
+}
+/*# sourceMappingURL=style.css.map */

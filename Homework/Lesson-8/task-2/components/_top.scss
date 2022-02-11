@@ -1,0 +1,61 @@
+@mixin button-proprties {
+    background-color: #ffffff;
+    border: 1px solid rgba(81, 81, 81, 0.41);
+    text-decoration: none;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner {
+    @include flex-column();
+    padding: 60px 0;
+    .top {
+        @include flex-row();
+        .discrption {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 36%;
+            h1 {
+                font-family: 'Open Sans';
+                font-size: 29.2px;
+                line-height: 1.2;
+                font-weight: 600;
+                color: #515151;
+            }
+            p {
+                font-family: 'Open Sans';
+                font-size: 17.2px;
+                line-height: 1.2;
+                font-weight: 400;
+                color: #8f8f8f;
+                padding: 26px 0;
+            }
+        }
+        button {
+            @include button-proprties();
+            p {
+                opacity: 0.7;
+                font-family: 'Open Sans';
+                font-size: 14.9px;
+                line-height: 1.2;
+                font-weight: 600;
+                color: #515151;
+                text-align: center;
+            }
+        }
+    }
+}

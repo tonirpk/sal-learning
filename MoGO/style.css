@@ -1,0 +1,591 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.site_header {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.89)), to(rgba(243, 129, 129, 0.89))), url(/MoGO/img/egle.png);
+  background: linear-gradient(0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%), url(/MoGO/img/egle.png);
+  background-size: cover;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.site_header .inner_header .upper_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.site_header .inner_header .upper_header .logo a {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site_header .inner_header .upper_header .logo a .logo_downcase {
+  text-transform: none;
+}
+
+.site_header .inner_header .upper_header .header_nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.site_header .inner_header .upper_header .header_nav ul a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fce38a;
+  left: 0;
+  bottom: -10px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.site_header .inner_header .upper_header .header_nav ul a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.site_header .inner_header .upper_header .header_nav ul a:hover {
+  color: #fce38a;
+}
+
+.site_header .inner_header .upper_header .header_nav li {
+  padding: 10px 20px;
+}
+
+.site_header .inner_header .upper_header .header_nav a {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.site_header .inner_header .downer_header {
+  height: 96vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site_header .inner_header .downer_header h2 {
+  font-family: 'Kaushan Script';
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.site_header .inner_header .downer_header h1 {
+  font-family: Montserrat;
+  font-size: 150px;
+  line-height: 140px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.site_header .inner_header .downer_header .dash {
+  color: #ffffff;
+  -webkit-transform: scale(5, 1);
+          transform: scale(5, 1);
+  padding-bottom: 30px;
+}
+
+.site_header .inner_header .downer_header button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #ffffff;
+  padding: 8px 30px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+
+.site_header .inner_header .downer_header button:hover {
+  background-color: #33333317;
+}
+
+.section_one .inner_section_one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 0;
+}
+
+.section_one .inner_section_one .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_one .inner_section_one .title h2 {
+  font-family: 'Kaushan Script';
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+
+.section_one .inner_section_one .title h1 {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+}
+
+.section_one .inner_section_one .title .dash {
+  color: #f38181;
+  -webkit-transform: scale(5, 1);
+          transform: scale(5, 1);
+  padding-bottom: 30px;
+}
+
+.section_one .inner_section_one .title p {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section_one .inner_section_one .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.section_one .inner_section_one .images .inner-image {
+  position: relative;
+  margin: 15px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.section_one .inner_section_one .images .inner-image .image-resizer {
+  width: 388px;
+  height: 262px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.section_one .inner_section_one .images .inner-image .image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.89)), to(rgba(243, 129, 129, 0.89)));
+  background: linear-gradient(0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.section_one .inner_section_one .images .inner-image .image_overlay:hover {
+  opacity: 1;
+}
+
+.section_one .inner_section_one .images .inner-image:hover {
+  -webkit-box-shadow: 10px 10px #95e1d3;
+          box-shadow: 10px 10px #95e1d3;
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+}
+
+.section_one .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #95e1d3;
+  border: #ffffff 1px solid;
+  margin: -1px 0 0 -1px;
+}
+
+.section_one .footer .number_box {
+  border: #ffffff 1px solid;
+  padding: 50px;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  margin: -1px 0 0 -1px;
+}
+
+.section_one .footer h1 {
+  font-family: Montserrat;
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section_one .footer p {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.section_two .inner_section_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 0;
+}
+
+.section_two .inner_section_two .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_two .inner_section_two .title h2 {
+  font-family: 'Kaushan Script';
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+
+.section_two .inner_section_two .title .dash {
+  color: #f38181;
+  -webkit-transform: scale(5, 1);
+          transform: scale(5, 1);
+  padding-bottom: 30px;
+}
+
+.section_two .inner_section_two .title h1 {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+}
+
+.section_two .inner_section_two .discrption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.section_two .inner_section_two .discrption .top_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.section_two .inner_section_two .discrption .top_row .row-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.section_two .inner_section_two .discrption .top_row .row-content i {
+  color: #95e1d3;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.section_two .inner_section_two .discrption .top_row .row-content h1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.section_two .inner_section_two .discrption .top_row .row-content p {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.section_two .inner_section_two .discrption .bottom_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.section_two .inner_section_two .discrption .bottom_row .row-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.section_two .inner_section_two .discrption .bottom_row .row-content i {
+  color: #95e1d3;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.section_two .inner_section_two .discrption .bottom_row .row-content h1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.section_two .inner_section_two .discrption .bottom_row .row-content p {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.section_three {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url(/MoGO/img/lake.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/MoGO/img/lake.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 850px;
+  position: relative;
+}
+
+.section_three .inner_section_three {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_three .inner_section_three h2 {
+  font-family: 'Kaushan Script';
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+
+.section_three .inner_section_three h1 {
+  font-family: Montserrat;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+  padding: 20px;
+}
+
+.section_three .inner_section_three .dash {
+  color: #f38181;
+  -webkit-transform: scale(5, 1);
+          transform: scale(5, 1);
+  padding-bottom: 30px;
+}
+
+.section_three .big_phone {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -581px);
+          transform: translate(-50%, -581px);
+}
+
+.section_three .small_phone {
+  position: absolute;
+  top: 100%;
+  left: 65%;
+  -webkit-transform: translate(-50%, -375px);
+          transform: translate(-50%, -375px);
+}
+/*# sourceMappingURL=style.css.map */

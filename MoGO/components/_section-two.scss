@@ -1,0 +1,92 @@
+@import '../components/general-proprties';
+.section_two {
+    .inner_section_two {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 80px 0;
+        .title {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                @include kaushan-title-property;
+            }
+            .dash {
+                @include dash-proprety;
+            }
+            h1 {
+                @include montserrat-title-property;
+            }
+        }
+        .discrption {
+            display: flex;
+            flex-flow: column wrap;
+            .top_row {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: 40px 0;
+                .row-content {
+                    display: flex;
+                    justify-content: center;
+                    flex: 0 1 20%;
+                    i {
+                        color: $greenish;
+                        font-size: 20px;
+                        margin: 0 20px;
+                    }
+                    h1 {
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        color: $dark-gray;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-family: Roboto;
+                        font-size: 15px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: $light-gray;
+                    }
+                }
+            }
+            .bottom_row {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: 40px 0;
+                .row-content {
+                    display: flex;
+                    justify-content: center;
+                    flex: 0 1 20%;
+                    i {
+                        color: $greenish;
+                        font-size: 20px;
+                        margin: 0 20px;
+                    }
+                    h1 {
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        color: $dark-gray;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-family: Roboto;
+                        font-size: 15px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: $light-gray;
+                    }
+                }
+            }
+        }
+    }
+}

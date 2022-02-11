@@ -1,0 +1,37 @@
+@import '../components/general-proprties';
+.section_three {
+    background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/MoGO/img/lake.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 850px;
+    position: relative;
+    .inner_section_three {
+        padding: 80px 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            @include kaushan-title-property;
+        }
+        h1 {
+            @include montserrat-title-property;
+        }
+        .dash {
+            @include dash-proprety;
+        }
+    }
+    .big_phone {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -581px);
+    }
+    .small_phone {
+        position: absolute;
+        top: 100%;
+        left: 65%;
+        transform: translate(-50%, -375px);
+    }
+}
