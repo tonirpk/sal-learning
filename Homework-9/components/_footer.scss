@@ -1,0 +1,73 @@
+.footer {
+    background-image: url(/sal-brunoyam/Homework-9/imgs/footer.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.726);
+    .footer_inner {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        .footer_logo {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            .logo_one {
+                position: relative;
+            }
+            .logo_two {
+                position: absolute;
+                transform: rotate(45deg);
+                opacity: 0.5;
+            }
+            h1 {
+                font-family: 'Lucida Sans';
+                font-size: 29.1px;
+                line-height: 1.2;
+                font-weight: 400;
+                font-style: italic;
+                text-transform: uppercase;
+                letter-spacing: 0.01em;
+                text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.41);
+                color: #ffffff;
+            }
+        }
+        .desgin {
+            p {
+                font-family: 'Open Sans';
+                font-size: 17.1px;
+                line-height: 1.2;
+                font-weight: 400;
+                letter-spacing: 0.01em;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .footer {
+        .footer_inner {
+            .footer_logo {
+                .logo_one {
+                    width: 31px;
+                    height: 31px;
+                }
+                .logo_two {
+                    width: 31px;
+                    height: 31px;
+                }
+                h1 {
+                    font-size: 16.7px;
+                }
+            }
+            .desgin {
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
