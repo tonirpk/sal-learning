@@ -1,37 +1,51 @@
 @import '../components/general-proprties';
 .section_three {
-    background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/MoGO/img/lake.png);
+    background: linear-gradient( rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/sal-brunoyam/MoGO/img/lake.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 850px;
-    position: relative;
     .inner_section_three {
-        padding: 80px 0;
+        // padding: 80px 0;
+        height: 100%;
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
+        flex-flow: column nowrap;
+        // justify-content: center;
         align-items: center;
-        h2 {
-            @include kaushan-title-property;
+        // position: relative;
+        border: red 1px solid;
+        .title {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                @include kaushan-title-property;
+            }
+            h1 {
+                @include montserrat-title-property;
+            }
+            .dash {
+                @include dash-proprety;
+            }
         }
-        h1 {
-            @include montserrat-title-property;
+        .devices_icons {
+            border: rgb(0, 17, 255) 1px solid;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            .big_phone {
+                position: absolute;
+                top: 113px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            .small_phone {
+                position: absolute;
+                top: 0;
+                left: 60%;
+                // transform: translate(-50%, -375px);
+            }
         }
-        .dash {
-            @include dash-proprety;
-        }
-    }
-    .big_phone {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -581px);
-    }
-    .small_phone {
-        position: absolute;
-        top: 100%;
-        left: 65%;
-        transform: translate(-50%, -375px);
     }
 }

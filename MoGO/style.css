@@ -6,8 +6,8 @@
 }
 
 .site_header {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.89)), to(rgba(243, 129, 129, 0.89))), url(/MoGO/img/egle.png);
-  background: linear-gradient(0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%), url(/MoGO/img/egle.png);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.89)), to(rgba(243, 129, 129, 0.89))), url(/sal-brunoyam/MoGO/img/egle.png);
+  background: linear-gradient(0deg, rgba(252, 227, 138, 0.89) 0%, rgba(243, 129, 129, 0.89) 100%), url(/sal-brunoyam/MoGO/img/egle.png);
   background-size: cover;
   background-position: 60%;
   background-repeat: no-repeat;
@@ -520,17 +520,30 @@
 }
 
 .section_three {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url(/MoGO/img/lake.png);
-  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/MoGO/img/lake.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url(/sal-brunoyam/MoGO/img/lake.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(/sal-brunoyam/MoGO/img/lake.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 850px;
-  position: relative;
 }
 
 .section_three .inner_section_three {
-  padding: 80px 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: red 1px solid;
+}
+
+.section_three .inner_section_three .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +559,7 @@
           align-items: center;
 }
 
-.section_three .inner_section_three h2 {
+.section_three .inner_section_three .title h2 {
   font-family: 'Kaushan Script';
   font-size: 24px;
   line-height: 1.2;
@@ -555,7 +568,7 @@
   text-align: center;
 }
 
-.section_three .inner_section_three h1 {
+.section_three .inner_section_three .title h1 {
   font-family: Montserrat;
   font-size: 30px;
   line-height: 1.2;
@@ -566,26 +579,31 @@
   padding: 20px;
 }
 
-.section_three .inner_section_three .dash {
+.section_three .inner_section_three .title .dash {
   color: #f38181;
   -webkit-transform: scale(5, 1);
           transform: scale(5, 1);
   padding-bottom: 30px;
 }
 
-.section_three .big_phone {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -581px);
-          transform: translate(-50%, -581px);
+.section_three .inner_section_three .devices_icons {
+  border: #0011ff 1px solid;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
-.section_three .small_phone {
+.section_three .inner_section_three .devices_icons .big_phone {
   position: absolute;
-  top: 100%;
-  left: 65%;
-  -webkit-transform: translate(-50%, -375px);
-          transform: translate(-50%, -375px);
+  top: 113px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.section_three .inner_section_three .devices_icons .small_phone {
+  position: absolute;
+  top: 0;
+  left: 60%;
 }
 /*# sourceMappingURL=style.css.map */
