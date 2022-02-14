@@ -530,7 +530,7 @@
 }
 
 .section_one .section_one_inner .top_text h1 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 37.1px;
   line-height: 1.2;
   font-weight: 400;
@@ -595,7 +595,7 @@
 }
 
 .section_one .section_one_inner .images .first_two .box .date h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 51.1px;
   line-height: 38px;
   font-weight: 700;
@@ -605,7 +605,7 @@
 }
 
 .section_one .section_one_inner .images .first_two .box .date h2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 21.1px;
   line-height: 38px;
   font-weight: 400;
@@ -647,7 +647,7 @@
 }
 
 .section_one .section_one_inner .images .first_two .box p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 29.1px;
   line-height: 38px;
   font-weight: 300;
@@ -678,7 +678,7 @@
 
 .section_one .section_one_inner .images .last .box .number_corner {
   position: absolute;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25.1px;
   line-height: 38px;
   font-weight: 300;
@@ -848,7 +848,7 @@
 
 @media (min-width: 641px) {
   .section_one {
-    background-image: url(/sal-brunoyam/Homework-9/imgs/section-one.png);
+    background-image: url(/Homework-9/imgs/section-one.png);
     background-size: cover;
   }
   .section_one .section_one_inner {
@@ -870,7 +870,7 @@
     padding-bottom: 40px;
   }
   .section_one .section_one_inner .top_text h1 {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-size: 37.1px;
     line-height: 1.2;
     font-weight: 400;
@@ -928,7 +928,7 @@
     z-index: 33;
   }
   .section_one .section_one_inner .images .first_two .box .date h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 51.1px;
     line-height: 38px;
     font-weight: 700;
@@ -937,7 +937,7 @@
     text-align: center;
   }
   .section_one .section_one_inner .images .first_two .box .date h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 21.1px;
     line-height: 38px;
     font-weight: 400;
@@ -975,7 +975,7 @@
             transform: translate(-50%, -50%);
   }
   .section_one .section_one_inner .images .first_two .box p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 29.1px;
     line-height: 38px;
     font-weight: 300;
@@ -999,7 +999,7 @@
   }
   .section_one .section_one_inner .images .last .box .number_corner {
     position: absolute;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25.1px;
     line-height: 38px;
     font-weight: 300;
@@ -1062,7 +1062,7 @@
 }
 
 .section_two {
-  background-image: url(/sal-brunoyam/Homework-9/imgs/section-two.png);
+  background-image: url(/Homework-9/imgs/section-two.png);
   background-size: cover;
 }
 
@@ -1084,7 +1084,7 @@
 }
 
 .section_two .section_two_inner .top_text h1 {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-size: 43.1px;
   line-height: 1.2;
   font-weight: 400;
@@ -1138,7 +1138,7 @@
 }
 
 .section_two .section_two_inner .content .devices_icons .free p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 18.8px;
   line-height: 1.2;
   font-weight: 700;
@@ -1164,7 +1164,7 @@
 }
 
 .section_two .section_two_inner .content .list ul li {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 22px;
   line-height: 1.2;
   font-weight: 400;

@@ -1,432 +1,436 @@
 @mixin box_orange {
-    width: 341px;
-    height: 233px;
-    background-color: #ec9e03;
+  width: 341px;
+  height: 233px;
+  background-color: #ec9e03;
 }
 
 @mixin plus_signs {
-    position: absolute;
-    color: #ffffff;
-    top: 90%;
-    left: 90%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  color: #ffffff;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin play_bitton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 61px;
-    height: 61px;
-    background-color: rgba(245, 197, 6, 0.72);
-    border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 61px;
+  height: 61px;
+  background-color: rgba(245, 197, 6, 0.72);
+  border-radius: 100%;
 }
 
 @mixin date {
-    width: 113px;
-    height: 86px;
-    background-color: rgba(0, 0, 0, 0.137);
-    position: absolute;
-    left: 0;
-    top: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    z-index: 33;
-    h1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 51.1px;
-        line-height: 38px;
-        font-weight: 700;
-        letter-spacing: 0.01em;
-        color: #ffffff;
-        text-align: center;
-    }
-    h2 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 21.1px;
-        line-height: 38px;
-        font-weight: 400;
-        letter-spacing: 0.01em;
-        color: #b26529;
-        text-transform: uppercase;
-        text-align: center;
-    }
+  width: 113px;
+  height: 86px;
+  background-color: rgba(0, 0, 0, 0.137);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  z-index: 33;
+  h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 51.1px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    text-align: center;
+  }
+  h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21.1px;
+    line-height: 38px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #b26529;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .section_one {
-    background-image: url(/sal-brunoyam/Homework-9/imgs/section-one.png);
-    background-size: cover;
-    .section_one_inner {
-        width: 85%;
-        margin: 0 auto;
-        padding: 42px 0 22px 0;
+  background-image: url(/sal-brunoyam/Homework-9/imgs/section-one.png);
+  background-size: cover;
+  .section_one_inner {
+    width: 85%;
+    margin: 0 auto;
+    padding: 42px 0 22px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    .top_text {
+      padding-bottom: 40px;
+      h1 {
+        font-family: "PT Sans";
+        font-size: 37.1px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+      }
+    }
+    .images {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      .first_two {
+        margin: 10px;
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        .top_text {
-            padding-bottom: 40px;
-            h1 {
-                font-family: 'PT Sans';
-                font-size: 37.1px;
-                line-height: 1.2;
-                font-weight: 400;
-                text-transform: uppercase;
-                letter-spacing: 0.01em;
-                color: #ffffff;
-            }
+        flex-flow: row wrap;
+        .box_iamge {
+          overflow: hidden;
         }
-        .images {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            .first_two {
-                margin: 10px;
-                display: flex;
-                flex-flow: row wrap;
-                .box_iamge {
-                    overflow: hidden;
-                }
-                .box {
-                    @include box_orange();
-                    position: relative;
-                    .date {
-                        @include date();
-                    }
-                    .play_button {
-                        @include play_bitton();
-                        i {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            color: #f5f4f2;
-                            font-size: 20px;
-                        }
-                    }
-                    .plus_sign {
-                        @include plus_signs();
-                    }
-                    p {
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                        font-size: 29.1px;
-                        line-height: 38px;
-                        font-weight: 300;
-                        letter-spacing: 0.01em;
-                        color: #ffffff;
-                        padding: 10px 20px;
-                    }
-                }
+        .box {
+          @include box_orange();
+          position: relative;
+          .date {
+            @include date();
+          }
+          .play_button {
+            @include play_bitton();
+            i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: #f5f4f2;
+              font-size: 20px;
             }
-            .last {
-                margin: 10px;
-                .box {
-                    @include box_orange();
-                    position: relative;
-                    .plus_sign {
-                        @include plus_signs();
-                    }
-                    .number_corner {
-                        position: absolute;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                        font-size: 25.1px;
-                        line-height: 38px;
-                        font-weight: 300;
-                        letter-spacing: 0.01em;
-                        color: #ffffff;
-                        top: 10%;
-                        left: 90%;
-                        transform: translate(-10%, -90%);
-                    }
-                    .twiiter {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        color: rgba(188, 125, 0, 0.9);
-                        font-size: 200px;
-                    }
-                }
-            }
+          }
+          .plus_sign {
+            @include plus_signs();
+          }
+          p {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 29.1px;
+            line-height: 38px;
+            font-weight: 300;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            padding: 10px 20px;
+          }
         }
-        .scroller {
-            width: 80%;
-            height: 15px;
-            background-color: rgba(255, 255, 255, 0.47);
-            border-radius: 20px;
-            margin: 0 auto;
-            margin-top: 120px;
+      }
+      .last {
+        margin: 10px;
+        .box {
+          @include box_orange();
+          position: relative;
+          .plus_sign {
+            @include plus_signs();
+          }
+          .number_corner {
+            position: absolute;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25.1px;
+            line-height: 38px;
+            font-weight: 300;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            top: 10%;
+            left: 90%;
+            transform: translate(-10%, -90%);
+          }
+          .twiiter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(188, 125, 0, 0.9);
+            font-size: 200px;
+          }
+        }
+      }
+    }
+    .scroller {
+      width: 80%;
+      height: 15px;
+      background-color: rgba(255, 255, 255, 0.47);
+      border-radius: 20px;
+      margin: 0 auto;
+      margin-top: 120px;
+      position: relative;
+      .scroller_bar {
+        border-radius: 20px;
+        width: 15%;
+        height: 15px;
+        background-color: #ec9e03;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.288);
+        position: absolute;
+        left: 25%;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    background-color: #ffffff;
+  }
+  .section_one {
+    background-image: none;
+    .section_one_inner {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      .top_text {
+        display: none;
+      }
+      .images {
+        .first_two {
+          .box {
+            width: 299px;
+            height: 232px;
+            background-color: #ec9e03;
+            margin: 5px;
             position: relative;
-            .scroller_bar {
-                border-radius: 20px;
-                width: 15%;
-                height: 15px;
-                background-color: #ec9e03;
-                box-shadow: 0 0 3px rgba(0, 0, 0, 0.288);
-                position: absolute;
-                left: 25%;
+            flex-grow: 1;
+            .date {
+              display: none;
             }
+          }
         }
-    }
-}
-
-@media (max-width:640px) {
-    body {
-        background-color: #ffffff;
-    }
-    .section_one {
-        background-image: none;
-        .section_one_inner {
+        .last {
+          width: 100%;
+          .box {
             width: 100%;
-            margin: 0 auto;
-            padding: 0;
-            .top_text {
-                display: none;
+            height: 232px;
+            background-color: #f5c507;
+            position: relative;
+            .plus_sign {
+              display: none;
             }
-            .images {
-                .first_two {
-                    .box {
-                        width: 299px;
-                        height: 232px;
-                        background-color: #ec9e03;
-                        margin: 5px;
-                        position: relative;
-                        flex-grow: 1;
-                        .date {
-                            display: none;
-                        }
-                    }
+            .number_corner {
+              display: none;
+            }
+            .twiiter {
+              position: absolute;
+              top: 50%;
+              left: 15%;
+              transform: translate(-15%, -50%);
+              color: rgba(188, 125, 0, 0.9);
+              font-size: 200px;
+            }
+            .tweets_bubbles_container {
+              .tweets {
+                background-image: url(/sal-brunoyam/Homework-9/imgs/mobile/chat_bubble.png);
+                width: 284px;
+                height: 42px;
+                margin: 14px 0;
+                position: relative;
+                p {
+                  font-family: Arial;
+                  font-size: 13.1px;
+                  line-height: 1.2;
+                  font-weight: 400;
+                  letter-spacing: 0.01em;
+                  color: #8f8e8e;
+                  position: absolute;
+                  top: 5px;
+                  left: 25px;
                 }
-                .last {
-                    width: 100%;
-                    .box {
-                        width: 100%;
-                        height: 232px;
-                        background-color: #f5c507;
-                        position: relative;
-                        .plus_sign {
-                            display: none;
-                        }
-                        .number_corner {
-                            display: none;
-                        }
-                        .twiiter {
-                            position: absolute;
-                            top: 50%;
-                            left: 15%;
-                            transform: translate(-15%, -50%);
-                            color: rgba(188, 125, 0, 0.9);
-                            font-size: 200px;
-                        }
-                        .tweets_bubbles_container {
-                            .tweets {
-                                background-image: url(/sal-brunoyam/Homework-9/imgs/mobile/chat_bubble.png);
-                                width: 284px;
-                                height: 42px;
-                                margin: 14px 0;
-                                position: relative;
-                                p {
-                                    font-family: Arial;
-                                    font-size: 13.1px;
-                                    line-height: 1.2;
-                                    font-weight: 400;
-                                    letter-spacing: 0.01em;
-                                    color: #8f8e8e;
-                                    position: absolute;
-                                    top: 5px;
-                                    left: 25px;
-                                }
-                            }
-                            .second_bubble {
-                                opacity: 0.7;
-                            }
-                            .third_bubble {
-                                opacity: 0.6;
-                            }
-                            position: absolute;
-                            top: 10%;
-                            right: 2%;
-                            transform: translate(-2%, -10%);
-                        }
-                        .add_tweet {
-                            .bar {
-                                width: 272px;
-                                height: 31px;
-                                background-color: #ffffff;
-                                border: 1px solid rgba(0, 0, 0, 0.14);
-                                box-shadow: inset 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
-                                border-radius: 12px;
-                                overflow: hidden;
-                                position: absolute;
-                                top: 92%;
-                                right: 2%;
-                                transform: translate(-2%, -92%);
-                                .inner_bar {
-                                    width: 69px;
-                                    height: 29px;
-                                    background-image: linear-gradient(0.0deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
-                                    background-color: #c68502;
-                                    position: absolute;
-                                    right: 0;
-                                    p {
-                                        font-family: Arial;
-                                        font-size: 15.1px;
-                                        line-height: 1.2;
-                                        font-weight: 400;
-                                        letter-spacing: 0.01em;
-                                        color: #ffffff;
-                                        position: absolute;
-                                        top: 50%;
-                                        left: 50%;
-                                        transform: translate(-50%, -50%);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+              }
+              .second_bubble {
+                opacity: 0.7;
+              }
+              .third_bubble {
+                opacity: 0.6;
+              }
+              position: absolute;
+              top: 10%;
+              right: 2%;
+              transform: translate(-2%, -10%);
             }
-            .scroller {
-                display: none;
-            }
-        }
-    }
-}
-
-@media (min-width:641px) {
-    .section_one {
-        background-image: url(/sal-brunoyam/Homework-9/imgs/section-one.png);
-        background-size: cover;
-        .section_one_inner {
-            width: 85%;
-            margin: 0 auto;
-            padding: 42px 0 22px 0;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            .top_text {
-                padding-bottom: 40px;
-                h1 {
-                    font-family: 'PT Sans';
-                    font-size: 37.1px;
+            .add_tweet {
+              .bar {
+                width: 272px;
+                height: 31px;
+                background-color: #ffffff;
+                border: 1px solid rgba(0, 0, 0, 0.14);
+                box-shadow: inset 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+                overflow: hidden;
+                position: absolute;
+                top: 92%;
+                right: 2%;
+                transform: translate(-2%, -92%);
+                .inner_bar {
+                  width: 69px;
+                  height: 29px;
+                  background-image: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.15) 0%,
+                    rgba(255, 255, 255, 0.15) 100%
+                  );
+                  background-color: #c68502;
+                  position: absolute;
+                  right: 0;
+                  p {
+                    font-family: Arial;
+                    font-size: 15.1px;
                     line-height: 1.2;
                     font-weight: 400;
-                    text-transform: uppercase;
                     letter-spacing: 0.01em;
                     color: #ffffff;
-                }
-            }
-            .images {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                .first_two {
-                    display: flex;
-                    flex-flow: row wrap;
-                    .box_iamge {
-                        overflow: hidden;
-                    }
-                    .box {
-                        @include box_orange();
-                        position: relative;
-                        .date {
-                            @include date();
-                        }
-                        .play_button {
-                            @include play_bitton();
-                            i {
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                                color: #f5f4f2;
-                                font-size: 20px;
-                            }
-                        }
-                        .plus_sign {
-                            @include plus_signs();
-                        }
-                        p {
-                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                            font-size: 29.1px;
-                            line-height: 38px;
-                            font-weight: 300;
-                            letter-spacing: 0.01em;
-                            color: #ffffff;
-                            padding: 10px 20px;
-                        }
-                    }
-                }
-                .last {
-                    .box {
-                        @include box_orange();
-                        position: relative;
-                        .plus_sign {
-                            @include plus_signs();
-                        }
-                        .number_corner {
-                            position: absolute;
-                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                            font-size: 25.1px;
-                            line-height: 38px;
-                            font-weight: 300;
-                            letter-spacing: 0.01em;
-                            color: #ffffff;
-                            top: 10%;
-                            left: 90%;
-                            transform: translate(-50%, -50%);
-                        }
-                        .twiiter {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            color: rgba(188, 125, 0, 0.9);
-                            font-size: 200px;
-                        }
-                        .tweets_bubbles_container {
-                            display: none;
-                            .second_bubble {
-                                display: none;
-                            }
-                            .third_bubble {
-                                display: none;
-                            }
-                        }
-                        .add_tweet {
-                            display: none;
-                            .bar {
-                                display: none;
-                                .inner_bar {
-                                    display: none;
-                                    p {
-                                        display: none;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .scroller {
-                width: 80%;
-                height: 15px;
-                background-color: rgba(255, 255, 255, 0.47);
-                border-radius: 20px;
-                margin: 0 auto;
-                margin-top: 120px;
-                position: relative;
-                .scroller_bar {
-                    border-radius: 20px;
-                    width: 15%;
-                    height: 15px;
-                    background-color: #ec9e03;
-                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.288);
                     position: absolute;
-                    left: 25%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  }
                 }
+              }
             }
+          }
         }
+      }
+      .scroller {
+        display: none;
+      }
     }
+  }
+}
+
+@media (min-width: 641px) {
+  .section_one {
+    background-image: url(/Homework-9/imgs/section-one.png);
+    background-size: cover;
+    .section_one_inner {
+      width: 85%;
+      margin: 0 auto;
+      padding: 42px 0 22px 0;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      .top_text {
+        padding-bottom: 40px;
+        h1 {
+          font-family: "PT Sans";
+          font-size: 37.1px;
+          line-height: 1.2;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 0.01em;
+          color: #ffffff;
+        }
+      }
+      .images {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .first_two {
+          display: flex;
+          flex-flow: row wrap;
+          .box_iamge {
+            overflow: hidden;
+          }
+          .box {
+            @include box_orange();
+            position: relative;
+            .date {
+              @include date();
+            }
+            .play_button {
+              @include play_bitton();
+              i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #f5f4f2;
+                font-size: 20px;
+              }
+            }
+            .plus_sign {
+              @include plus_signs();
+            }
+            p {
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              font-size: 29.1px;
+              line-height: 38px;
+              font-weight: 300;
+              letter-spacing: 0.01em;
+              color: #ffffff;
+              padding: 10px 20px;
+            }
+          }
+        }
+        .last {
+          .box {
+            @include box_orange();
+            position: relative;
+            .plus_sign {
+              @include plus_signs();
+            }
+            .number_corner {
+              position: absolute;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              font-size: 25.1px;
+              line-height: 38px;
+              font-weight: 300;
+              letter-spacing: 0.01em;
+              color: #ffffff;
+              top: 10%;
+              left: 90%;
+              transform: translate(-50%, -50%);
+            }
+            .twiiter {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: rgba(188, 125, 0, 0.9);
+              font-size: 200px;
+            }
+            .tweets_bubbles_container {
+              display: none;
+              .second_bubble {
+                display: none;
+              }
+              .third_bubble {
+                display: none;
+              }
+            }
+            .add_tweet {
+              display: none;
+              .bar {
+                display: none;
+                .inner_bar {
+                  display: none;
+                  p {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .scroller {
+        width: 80%;
+        height: 15px;
+        background-color: rgba(255, 255, 255, 0.47);
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 120px;
+        position: relative;
+        .scroller_bar {
+          border-radius: 20px;
+          width: 15%;
+          height: 15px;
+          background-color: #ec9e03;
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.288);
+          position: absolute;
+          left: 25%;
+        }
+      }
+    }
+  }
 }
