@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .window{
+            border: 1px solid black;
+            width: 300px;
+            margin: 0 auto;
+            background-color: pink;
+            z-index: 5;
+            position: relative;
+            top: 150px;
+            padding: 20px;
+        }
+        .overlay::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.692);
+            width: 100%;
+            height: 100%;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        
+    </div> -->
+    <button class="btn-open">Click me</button>
+    <div class="window hidden">
+        <button class="btn-close">Close me</button>
+        <h1>You have to close me</h1>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
