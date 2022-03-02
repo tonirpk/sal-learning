@@ -1,7 +1,6 @@
 const input = document.querySelector("input");
 const btn = document.querySelector("button");
 const infoBlock = document.querySelector(".info");
-const btnExit = document.querySelector(".exit");
 const unorderList = document.querySelector(".unorder-list");
 const bodySelector = document.querySelector("body");
 
@@ -25,20 +24,36 @@ btn.addEventListener("click", () => {
   req.send();
 
   req.addEventListener("load", () => {
-    const res = JSON.parse(req.response);
+    const allUserData = JSON.parse(req.response);
 
-    for (let i = 0; i < res.length; i++) {
-      const newList = document.createElement("li");
-      newList.classList.add("list-items");
-      unorderList.append(newList);
-      newList.textContent = res[i].full_name;
+    if (req.status === 200) {
+      infoBlock.classList.add("info");
+      infoBlock.classList.remove("info-not-found");
+      for (let i = 0; i < allUserData.length; i++) {
+        for (let [key, value] of Object.entries(allUserData[i])) {
+          const newList = document.createElement("li");
+          unorderList.append(newList);
+          newList.append(`${key}: ${value}`);
+          infoBlock.append(newList);
+          newList.classList.add("list-items");
+        }
+        const newList = document.createElement("li");
+        newList.classList.add("list-items-end");
+        unorderList.append(newList);
+        infoBlock.append(newList);
+      }
+    } else {
+      const message = allUserData.message;
+      const newDiv = document.createElement("div");
+      infoBlock.append(newDiv);
+      newDiv.textContent = `User ${message}`;
+      // newDiv.append(`User ${message}`);
+      newDiv.classList.add("user-not-found");
+      infoBlock.classList.remove("info");
+      infoBlock.classList.add("info-not-found");
     }
   });
-  unorderList.innerHTML = "";
-});
-
-btnExit.addEventListener("click", () => {
-  infoBlock.classList.add("hidden");
+  infoBlock.innerHTML = "";
 });
 
 document.addEventListener("click", (event) => {
