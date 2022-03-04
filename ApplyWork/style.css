@@ -17,7 +17,6 @@ body {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-self: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,6 +50,7 @@ body {
     letter-spacing: 0.1px;
     /* text-color */
     color: black;
+    width: 100%;
 }
 
 .container select {
@@ -64,6 +64,7 @@ body {
     letter-spacing: 0.1px;
     /* text-color */
     color: black;
+    width: 100%;
 }
 
 .container select option {
@@ -91,7 +92,7 @@ body {
         background-color: rgb(48, 41, 59);
         padding: 20px;
         border-radius: 0;
-        box-shadow: 0px;
+        box-shadow: none;
     }
     .container label {
         font-size: 30px;
