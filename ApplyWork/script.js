@@ -59,5 +59,10 @@ bankName.addEventListener("keydown", (e) => {
       })
       .catch((error) => console.log("error", error));
     dropList.innerHTML = "";
+    shortTitle.value = "";
+    innShow.value = "";
+    fullName.value = "";
+    address.value = "";
+
   }
 });
