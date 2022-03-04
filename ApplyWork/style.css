@@ -66,11 +66,21 @@ body {
     color: black;
 }
 
+.container select option {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    /* text-color */
+    color: black;
+}
+
 .hidden {
     display: none;
 }
 
-@media (max-width: 759px) {
+@media (max-width: 500px) {
     .container {
         width: 100%;
         height: 100%;
@@ -90,5 +100,13 @@ body {
         padding: 15px;
         margin-bottom: 20px;
         font-size: 25px;
+    }
+    .container select {
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .container select option {
+        font-size: 12px;
     }
 }
