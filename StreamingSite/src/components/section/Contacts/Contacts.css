@@ -1,0 +1,183 @@
+.contacts-container {
+  width: 90%;
+  max-width: 700px;
+  z-index: 1;
+}
+
+.contacts-container .contacts-inner-container {
+  margin-top: 120px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+  width: 90%;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background: #488fb1;
+  border: 10px solid #fff;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contacts-container .contacts-inner-container:hover {
+  -webkit-box-shadow: #4fd3c4 1px 1px, #4fd3c4 2px 2px, #4fd3c4 3px 3px, #4fd3c4 4px 4px, #4fd3c4 5px 5px, #4fd3c4 6px 6px;
+          box-shadow: #4fd3c4 1px 1px, #4fd3c4 2px 2px, #4fd3c4 3px 3px, #4fd3c4 4px 4px, #4fd3c4 5px 5px, #4fd3c4 6px 6px;
+}
+
+.contacts-container .contacts-inner-container .soical-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-left: 5px solid #e55643;
+  border-bottom: 2px solid #e55643;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .icon {
+  font-size: 150px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .icon path {
+  stroke: black;
+  stroke-width: 2px;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .icon:hover > path {
+  -webkit-transform: scale(1.1) rotate(360deg);
+          transform: scale(1.1) rotate(360deg);
+  stroke: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .contacts-container .contacts-inner-container .soical-media a .icon {
+    font-size: 90px;
+  }
+}
+
+.contacts-container .contacts-inner-container .soical-media a .facebook {
+  color: #627dc1;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .facebook:hover {
+  color: #3a5895;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .gitHub {
+  color: #627dc1;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .gitHub:hover {
+  color: #313030;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .youTube {
+  color: #627dc1;
+}
+
+.contacts-container .contacts-inner-container .soical-media a .youTube:hover {
+  color: #f7021a;
+}
+
+.contacts-container .contacts-inner-container .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  border-left: 5px solid #e55643;
+}
+
+.contacts-container .contacts-inner-container .form-wrapper .name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.contacts-container .contacts-inner-container .form-wrapper .input {
+  margin: 10px 0;
+  padding: 10px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.479);
+  margin: 5px;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contacts-container .contacts-inner-container .form-wrapper .textarea {
+  max-height: 200px;
+  height: 100px;
+  resize: vertical;
+}
+
+.contacts-container .contacts-inner-container .form-wrapper .send-button {
+  border: none;
+  margin: 15px auto;
+  padding: 8px 40px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  background-color: #627dc1;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 0px #4fd3c4, 0px 13px 0px #00000077;
+          box-shadow: 0px 10px 0px #4fd3c4, 0px 13px 0px #00000077;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contacts-container .contacts-inner-container .form-wrapper .send-button:hover {
+  background-color: #37476d;
+  color: #4fd3c4;
+}
+
+.contacts-container .contacts-inner-container .form-wrapper .send-button:active {
+  -webkit-box-shadow: 0px 2px 0px #4fd3c4;
+          box-shadow: 0px 2px 0px #4fd3c4;
+  position: relative;
+  top: 6px;
+}
+/*# sourceMappingURL=Contacts.css.map */

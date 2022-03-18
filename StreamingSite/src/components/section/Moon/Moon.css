@@ -1,0 +1,25 @@
+.whiteMoon {
+  position: absolute;
+  top: 5%;
+  right: 100px;
+  width: 100%;
+  max-width: 300px;
+  mix-blend-mode: screen;
+}
+
+[data-aos="MoonUp"] {
+  opacity: 0;
+  -webkit-transform: translateY(900px);
+          transform: translateY(900px);
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: transform, opacity;
+  transition: transform, opacity, -webkit-transform;
+}
+
+[data-aos="MoonUp"].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateY(0) rotate(520deg);
+          transform: translateY(0) rotate(520deg);
+}
+/*# sourceMappingURL=Moon.css.map */

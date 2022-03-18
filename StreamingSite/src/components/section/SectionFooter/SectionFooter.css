@@ -1,0 +1,8 @@
+.footerWoods {
+  position: absolute;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: 0;
+}
+/*# sourceMappingURL=SectionFooter.css.map */

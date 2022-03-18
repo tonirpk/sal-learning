@@ -1,0 +1,126 @@
+.contacts-container {
+    width: 90%;
+    max-width: 700px;
+    z-index: 1;
+    .contacts-inner-container {
+        margin-top: 120px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+        width: 90%;
+        max-width: 700px;
+        display: flex;
+        flex-flow: column nowrap;
+        background: #488fb1;
+        border: 10px solid #fff;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.4s;
+        &:hover {
+            box-shadow: #4fd3c4 1px 1px, #4fd3c4 2px 2px, #4fd3c4 3px 3px, #4fd3c4 4px 4px, #4fd3c4 5px 5px, #4fd3c4 6px 6px;
+        }
+        .soical-media {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            border-left: 5px solid #e55643;
+            border-bottom: 2px solid #e55643;
+            // overflow: hidden;
+            a {
+                .icon {
+                    path {
+                        stroke: rgb(0, 0, 0);
+                        stroke-width: 2px;
+                        transition: all 0.6s ease-in-out;
+                        transform-origin: 50% 50%;
+                    }
+                    font-size: 150px;
+                    transition: all 0.2s ease-in-out;
+                    transition: all 0.3s ease;
+                    &:hover>path {
+                        transform: scale(1.1) rotate(360deg);
+                        stroke: #ffffff;
+                    }
+                    @media (max-width: 640px) {
+                        font-size: 90px;
+                    }
+                }
+                .facebook {
+                    color: #627dc1;
+                    &:hover {
+                        color: #3a5895;
+                    }
+                }
+                .gitHub {
+                    color: #627dc1;
+                    &:hover {
+                        color: #313030;
+                    }
+                }
+                .youTube {
+                    color: #627dc1;
+                    &:hover {
+                        color: #f7021a;
+                    }
+                }
+            }
+        }
+        .form-wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            border-left: 5px solid #e55643;
+            .name-email {
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .input {
+                margin: 10px 0;
+                padding: 10px 10px;
+                flex-grow: 1;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.479);
+                margin: 5px;
+                border-radius: 5px;
+                font-family: Montserrat;
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 700;
+                color: #000000;
+            }
+            .textarea {
+                max-height: 200px;
+                height: 100px;
+                resize: vertical;
+            }
+            .send-button {
+                border: none;
+                margin: 15px auto;
+                padding: 8px 40px;
+                font-family: "Poppins", sans-serif;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-style: normal;
+                font-weight: 600;
+                text-align: center;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: #ffffff;
+                background-color: #627dc1;
+                border-radius: 15px;
+                box-shadow: 0px 10px 0px #4fd3c4, 0px 13px 0px #00000077;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: #37476d;
+                    color: #4fd3c4;
+                }
+                &:active {
+                    box-shadow: 0px 2px 0px #4fd3c4;
+                    position: relative;
+                    top: 6px;
+                }
+            }
+        }
+    }
+}
